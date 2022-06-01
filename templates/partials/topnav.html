@@ -1,0 +1,56 @@
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h3>Informacion</h3>
+                </div>
+                <div class="card-body">
+                    <marquee behavior="" direction="">
+                        <img src="https://th.bing.com/th/id/R.ea91229453e5193f4c75f74887ed7b23?rik=an%2fTDJNDa4jqtg&pid=ImgRaw&r=0" class="img-fluid" alt="" width="150" height="150">
+                        <img src="https://www.inkaferro.com.pe/wp-content/uploads/2020/05/fierro-ArcelorMittal-1920px.jpg" class="img-fluid" alt="" width="150" height="150">
+                        <img src="https://www.itacamba.com/wp-content/uploads/2018/04/cemento-camba-uso-general.png" class="img-fluid" alt="" width="150" height="150">
+                        <h3 class="my-4">Venta de Materiales de Construccion</h3>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                
+                <div class="card-header bg-dark text-white">
+                    <h3>Estadisticas</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-staff' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Personal <i class="fas fa-users"></i></h4>
+                                    <h3>{{ workers_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-product' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Productos <i class="fas fa-box"></i></h4>
+                                    <h3>{{ product_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-order' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Pedidos <i class="fas fa-shipping-fast"></i></h4>
+                                    <h3>{{ orders_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
